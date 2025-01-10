@@ -59,15 +59,15 @@ To run the project locally, follow these steps:
 
 ```
 /src
-  ├── /commands        # Command files
-  ├── /utils           # Utility functions
-  ├── /index.ts        # Main entry file for the bot
-  ├── /deploy-commands.ts # Script to deploy slash commands
-.env                   # Environment variables
-.gitignore             # Git ignore file to exclude unnecessary files
-package.json           # Project configuration and dependencies
-tsconfig.json          # TypeScript configuration file
-README.md              # This README file
+  ├── /commands             # Command files
+  ├── /utils                # Utility functions
+  ├── index.ts              # Main entry file for the bot
+  ├── deploy-commands.ts    # Script to deploy slash commands
+.env                        # Environment variables
+.gitignore                  # Git ignore file to exclude unnecessary files
+package.json                # Project configuration and dependencies
+tsconfig.json               # TypeScript configuration file
+README.md                   # This README file
 ```
 
 ## License
