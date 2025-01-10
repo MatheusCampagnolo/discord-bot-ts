@@ -11,7 +11,9 @@
     "axios": "^1.7.9",
     "discord-api-types": "^0.37.115",
     "discord.js": "^14.0.0",
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "@types/axios": "^0.9.36",
