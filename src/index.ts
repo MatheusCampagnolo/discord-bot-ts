@@ -39,12 +39,19 @@ client.once('ready', async () => {
     ];
 
     try {
-        console.log('Registrando comandos de barra...');
+        console.log('Limpando comandos antigos...');
+        await rest.put(
+            Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID),
+            { body: [] },
+        );
+        console.log('Comandos antigos limpos com sucesso!');
+
+        console.log('Registrando novos comandos de barra...');
         await rest.put(
             Routes.applicationGuildCommands(CLIENT_ID, GUILD_ID),
             { body: commands },
         );
-        console.log('Comandos de barra registrados com sucesso!');
+        console.log('Novos comandos de barra registrados com sucesso!');
     } catch (error) {
         console.error('Erro ao registrar comandos de barra:', error);
     }
@@ -68,7 +75,6 @@ client.on('interactionCreate', async interaction => {
 
 async function getWeather(city: string): Promise<string> {
     try {
-        // Get city coordinates
         const geoResponse = await axios.get(`https://geocoding-api.open-meteo.com/v1/search`, {
             params: {
                 name: city,
@@ -82,7 +88,6 @@ async function getWeather(city: string): Promise<string> {
 
         const { latitude, longitude } = geoData.results[0];
 
-        // Get weather data
         const weatherResponse = await axios.get(`https://api.open-meteo.com/v1/forecast`, {
             params: {
                 latitude: latitude,
