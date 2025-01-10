@@ -12,7 +12,7 @@ const validCurrencies = [
     { name: 'CNY', value: 'CNY' },
     { name: 'SEK', value: 'SEK' },
     { name: 'NZD', value: 'NZD' },
-    { name: 'BRL', value: 'BRL' }, // Adicionando BRL
+    { name: 'BRL', value: 'BRL' },
 ];
 
 export const convert = {
