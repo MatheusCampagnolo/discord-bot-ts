@@ -14,6 +14,7 @@ A simple Discord bot built with **Discord.js** and **TypeScript**. This bot is c
 - **Hello Command**: Responds with a greeting message.
 - **Weather Command**: Fetches and displays the weather for a specified city.
 - **Exchange Rate Command**: Fetches and displays the exchange rate between two currencies.
+- **Echo Command**: Repeats the message provided by the user.
 
 ## Technologies Used
 
