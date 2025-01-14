@@ -17,6 +17,7 @@ A simple Discord bot built with **Discord.js** and **TypeScript**. This bot is c
 - **Echo Command**: Repeats the message provided by the user.
 - **Coinflip Command**: Flips a coin and returns the result.
 - **Poll Command**: Creates a simple poll.
+- **Serverinfo Command**: Displays information about the server.
 
 ## Technologies Used
 
